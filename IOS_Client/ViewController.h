@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextField *urlText;
+@property (weak, nonatomic) IBOutlet UITextField *ipText;
+@property (weak, nonatomic) IBOutlet UITextField *portText;
+- (IBAction)submit:(UIButton *)sender;
+- (IBAction)hideKeyboard:(UITextField *)sender;
 
 @end
