@@ -28,6 +28,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+/* send informaton to server */
 - (IBAction)submit:(UIButton *)sender {
     NSLog(@" url :%@ ",[self.urlText text]);
 }
