@@ -33,6 +33,7 @@
     NSLog(@" url :%@ ",[self.urlText text]);
 }
 
+/* hide keyboard */
 - (IBAction)hideKeyboard:(UITextField *)sender {
     [sender resignFirstResponder];
 }
