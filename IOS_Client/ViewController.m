@@ -17,7 +17,8 @@
 @synthesize urlText;
 @synthesize ipText;
 @synthesize portText;
-@dynamic thread;
+@synthesize  thread;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -29,7 +30,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /* initialize the newtwork */
 -(void)initializeNetwork{
     /* obtain the NSOutput and NSInputStream */
@@ -40,6 +40,11 @@
     thread=[[ThreadCommunicate alloc]initWithURL:[self.urlText text] withIP:[self.ipText text] withPort:[self.portText text]];
     [thread initNetworkCommunication];
 }
+
+
+
+
+/* hide keyboard */
 
 - (IBAction)hideKeyboard:(UITextField *)sender {
     [sender resignFirstResponder];

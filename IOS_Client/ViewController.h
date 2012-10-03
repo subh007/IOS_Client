@@ -15,6 +15,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *ipText;
 @property (weak, nonatomic) IBOutlet UITextField *portText;
 @property(retain,nonatomic) ThreadCommunicate *thread;
+
+
+
 - (IBAction)submit:(UIButton *)sender;
 - (IBAction)hideKeyboard:(UITextField *)sender;
 
