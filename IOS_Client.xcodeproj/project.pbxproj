@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1791EE1B161B78090099B9E1 /* ThreadCommunicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1791EE1A161B78090099B9E1 /* ThreadCommunicate.m */; };
 		179604E8160FAACF00A91BB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179604E7160FAACF00A91BB2 /* UIKit.framework */; };
 		179604EA160FAACF00A91BB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179604E9160FAACF00A91BB2 /* Foundation.framework */; };
 		179604EC160FAACF00A91BB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 179604EB160FAACF00A91BB2 /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1791EE19161B78090099B9E1 /* ThreadCommunicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadCommunicate.h; sourceTree = "<group>"; };
+		1791EE1A161B78090099B9E1 /* ThreadCommunicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadCommunicate.m; sourceTree = "<group>"; };
 		179604E3160FAACF00A91BB2 /* IOS_Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS_Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		179604E7160FAACF00A91BB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		179604E9160FAACF00A91BB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,8 @@
 				17960500160FAACF00A91BB2 /* ViewController.m */,
 				17960502160FAACF00A91BB2 /* ViewController_iPhone.xib */,
 				17960505160FAACF00A91BB2 /* ViewController_iPad.xib */,
+				1791EE19161B78090099B9E1 /* ThreadCommunicate.h */,
+				1791EE1A161B78090099B9E1 /* ThreadCommunicate.m */,
 				179604EE160FAACF00A91BB2 /* Supporting Files */,
 			);
 			path = IOS_Client;
@@ -277,6 +282,7 @@
 				179604F4160FAACF00A91BB2 /* main.m in Sources */,
 				179604F8160FAACF00A91BB2 /* AppDelegate.m in Sources */,
 				17960501160FAACF00A91BB2 /* ViewController.m in Sources */,
+				1791EE1B161B78090099B9E1 /* ThreadCommunicate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				17960521160FAAD000A91BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17960522160FAAD000A91BB2 /* Build configuration list for PBXNativeTarget "IOS_ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				17960524160FAAD000A91BB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

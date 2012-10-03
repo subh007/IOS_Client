@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#include "ThreadCommunicate.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,7 @@
 @synthesize urlText;
 @synthesize ipText;
 @synthesize portText;
+@dynamic thread;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -28,8 +30,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+/* initialize the newtwork */
+-(void)initializeNetwork{
+    /* obtain the NSOutput and NSInputStream */
+}
+
 - (IBAction)submit:(UIButton *)sender {
-    NSLog(@" url :%@ ",[self.urlText text]);
+    NSLog(@" url :%@  IP : %@   port: %@",[self.urlText text],[self.ipText text],[self.portText text]);
+    thread=[[ThreadCommunicate alloc]initWithURL:[self.urlText text] withIP:[self.ipText text] withPort:[self.portText text]];
+    [thread initNetworkCommunication];
 }
 
 - (IBAction)hideKeyboard:(UITextField *)sender {
